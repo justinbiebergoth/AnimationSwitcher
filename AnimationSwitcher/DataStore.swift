@@ -7,9 +7,11 @@
 
 import SpringAnimation
 
-struct DataStore {
+class DataStore {
     static let shared = DataStore()
     
     let animations = AnimationPreset.self
     let curve = AnimationCurve.self
+    
+    private init() {}
 }

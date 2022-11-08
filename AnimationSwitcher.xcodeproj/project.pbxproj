@@ -15,7 +15,7 @@
 		8E27A8782911926D0015C1CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E27A8772911926D0015C1CD /* Assets.xcassets */; };
 		8E27A87B2911926D0015C1CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E27A8792911926D0015C1CD /* LaunchScreen.storyboard */; };
 		8E27A8852911B5C60015C1CD /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 8E27A8842911B5C60015C1CD /* SpringAnimation */; };
-		8E27A8872911BF310015C1CD /* AnimationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E27A8862911BF310015C1CD /* AnimationDataManager.swift */; };
+		8E27A8872911BF310015C1CD /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E27A8862911BF310015C1CD /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 		8E27A8772911926D0015C1CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E27A87A2911926D0015C1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E27A87C2911926D0015C1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E27A8862911BF310015C1CD /* AnimationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDataManager.swift; sourceTree = "<group>"; };
+		8E27A8862911BF310015C1CD /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 		8E27A86D2911926B0015C1CD /* AnimationSwitcher */ = {
 			isa = PBXGroup;
 			children = (
-				8E27A8862911BF310015C1CD /* AnimationDataManager.swift */,
+				8E27A8862911BF310015C1CD /* Animation.swift */,
 				8E08B7B8291300690053914A /* DataStore.swift */,
 				8E27A86E2911926B0015C1CD /* AppDelegate.swift */,
 				8E27A8702911926B0015C1CD /* SceneDelegate.swift */,
@@ -156,7 +156,7 @@
 				8E27A86F2911926B0015C1CD /* AppDelegate.swift in Sources */,
 				8E27A8712911926B0015C1CD /* SceneDelegate.swift in Sources */,
 				8E08B7B9291300690053914A /* DataStore.swift in Sources */,
-				8E27A8872911BF310015C1CD /* AnimationDataManager.swift in Sources */,
+				8E27A8872911BF310015C1CD /* Animation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

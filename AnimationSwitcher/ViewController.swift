@@ -10,41 +10,32 @@ import SpringAnimation
 
 class ViewController: UIViewController {
     
-    private var animation = AnimationDataManager.getRandomAnimation()
-
     @IBOutlet var animationView: SpringView!
-    @IBOutlet var animationButton: SpringButton!
-    
-    
-    @IBOutlet var presetLabel: UILabel!
-    @IBOutlet var curveLabel: UILabel!
-    @IBOutlet var forceLabel: UILabel!
-    @IBOutlet var durationLabel: UILabel!
-    @IBOutlet var delayLabel: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-       setViewLabels()
-    
+    @IBOutlet var animationDescriptionTextView: UITextView! {
+        didSet {
+            animationDescriptionTextView.text = animation.description
+        }
     }
 
-    @IBAction func startAnimation(_ sender: SpringButton) {
+    private var animation = Animation.getRandomAnimation()
+
+    @IBAction func startAnimation(_ sender: UIButton) {
         animationView.animation = animation.preset
+        animationView.curve = animation.curve
+        animationView.force = animation.force
+        animationView.duration = animation.duration
+        animationView.delay = animation.delay
         animationView.animate()
-        setViewLabels()
-        animation = AnimationDataManager.getRandomAnimation()
-        animationButton.setTitle("Run \(animation.preset)", for: .normal)
         
         
+        animationDescriptionTextView.text = animation.description
+        animation = Animation.getRandomAnimation()
+        sender.setTitle("Run \(animation.preset)", for: .normal)
         
     }
 
     private func setViewLabels() {
-        presetLabel.text = animation.preset
-        curveLabel.text = animation.curve
-        forceLabel.text = String(format: "%0.2f", animation.force)
-        durationLabel.text = String(format: "%0.2f", animation.duration)
-        delayLabel.text = String(format: "%0.2f", animation.delay)
+        animationDescriptionTextView.text = animation.description
         
     }
 
